@@ -1,0 +1,38 @@
+{
+  "errors": [],
+  "warnings": [],
+  "hash": "e0ace8e079e2f3b4a7a9",
+  "publicPath": "/static/",
+  "outputPath": "D:\\WEB\\Website_2021\\rnb\\build\\static",
+  "assetsByChunkName": {
+    "rnb": [
+      "rnb.module.js",
+      "rnb.0edda7931ed9791fcaad.hot-update.js"
+    ]
+  },
+  "assets": [],
+  "filteredAssets": 3,
+  "namedChunkGroups": {
+    "rnb": {
+      "chunks": [
+        "rnb"
+      ],
+      "assets": [
+        "rnb.module.js",
+        "rnb.0edda7931ed9791fcaad.hot-update.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "generator": "loadable-components",
+  "chunks": [
+    {
+      "id": "rnb",
+      "files": [
+        "rnb.module.js",
+        "rnb.0edda7931ed9791fcaad.hot-update.js"
+      ]
+    }
+  ]
+}
