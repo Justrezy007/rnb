@@ -1,5 +1,5 @@
 import React from 'react';
-import {connect,Global, css} from "frontity";
+import {connect,Global, css, styled} from "frontity";
 import Switch from "@frontity/components/switch";
 import HomePage from "./HomePage";
 import Post from "./post";
@@ -16,7 +16,7 @@ const Root = ({state}) =>{
     const data = state.source .get(state.router.link)
 
     return(
-        <>
+        <MainContainer>
             <SideNavigation />
             <Navigation />
             <main>
@@ -32,7 +32,10 @@ const Root = ({state}) =>{
                     font-family: 'helvetica','Segoe UI','Roboto','Neue', 'sans-serif';
                 }
                 body{
-                    background-color: #F5F5F6;
+                    background-color: black;
+                    margin: 0;
+                    padding: 0;
+                    overflow-x: hide;
                 }
                 a.active{
                     font-weight: 700;
@@ -40,8 +43,12 @@ const Root = ({state}) =>{
                     opacity: 1 !important;
                 }
             `} />
-        </>
+        </MainContainer>
     )
 }
 
 export default connect(Root);
+
+const MainContainer = styled.div`
+    background: #f5f5f6;
+`
